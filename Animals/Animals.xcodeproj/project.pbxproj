@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE06415F2E8EAE9B00812FE0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CE06415E2E8EAE9B00812FE0 /* ComposableArchitecture */; };
+		CE0641702E8EB95000812FE0 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CE06416F2E8EB95000812FE0 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE06415F2E8EAE9B00812FE0 /* ComposableArchitecture in Frameworks */,
+				CE0641702E8EB95000812FE0 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = Animals;
 			packageProductDependencies = (
 				CE06415E2E8EAE9B00812FE0 /* ComposableArchitecture */,
+				CE06416F2E8EB95000812FE0 /* Swinject */,
 			);
 			productName = Animals;
 			productReference = CE2BA6FA2E8EA6FA00690ECD /* Animals.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				CE06415D2E8EAE9B00812FE0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CE06416E2E8EB95000812FE0 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE2BA6FB2E8EA6FA00690ECD /* Products */;
@@ -347,6 +351,14 @@
 				minimumVersion = 1.22.3;
 			};
 		};
+		CE06416E2E8EB95000812FE0 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -354,6 +366,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE06415D2E8EAE9B00812FE0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		CE06416F2E8EB95000812FE0 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE06416E2E8EB95000812FE0 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

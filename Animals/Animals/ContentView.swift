@@ -16,6 +16,12 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            Task {
+             let t = try await RequestManager.request(.animals(), resultType: [AnimalRemote?].self)
+                print(t)
+            }
+        }
     }
 }
 
