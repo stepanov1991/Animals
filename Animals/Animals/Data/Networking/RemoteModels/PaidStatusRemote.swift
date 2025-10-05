@@ -8,5 +8,4 @@
 enum PaidStatusRemote: String, Codable, CodingKey {
     case paid
     case free
-    case comingSoon = "coming_soon"
 }

@@ -9,12 +9,14 @@ import Foundation
 
 struct ContentModel: Identifiable {
     let id = UUID()
-    let fact: String?
+    let fact: String
     let image: String?
     
     init(from remote: ContentRemote?) {
-        self.fact = remote?.fact
+        self.fact = remote?.fact ?? "There are no fact"
         self.image = remote?.image
     }
     
 }
+
+extension ContentModel: Equatable { } 

@@ -15,3 +15,5 @@ enum PaidStatusModel: String {
         self = PaidStatusModel(rawValue: remote.rawValue) ?? .comingSoon
     }
 }
+
+extension PaidStatusModel: Equatable { } 

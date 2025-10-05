@@ -21,8 +21,8 @@ extension Font {
     
     // MARK: - Styles
     static let categoryTitle = getFont(.basicRegular, size: 17)
-    static let title = getFont(.basicRegular, size: 16)
-    static let subtitle = getFont(.basicRegular, size: 12)
+    static let cellTitle = getFont(.basicRegular, size: 16)
+    static let cellSubtitle = getFont(.basicRegular, size: 12)
     static let fuctTitle = getFont(.basicRegular, size: 18)
 
 }
