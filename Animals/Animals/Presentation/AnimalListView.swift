@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-struct ContentView: View {
+struct AnimalListView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -23,8 +24,4 @@ struct ContentView: View {
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
