@@ -37,6 +37,7 @@ struct AnimalListView: View {
                 .onAppear {
                     store.send(.onAppear)
                 }
+                .alert($store.scope(state: \.alert, action: \.alert))
             } destination: { store in
                 switch store.case {
                 case let .fact(factStore):
