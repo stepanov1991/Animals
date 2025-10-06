@@ -16,10 +16,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CE0641D32E9275B000812FE0 /* Exceptions for "Animals" folder in "Animals" target */ = {
+		CE0642D12E93AADE00812FE0 /* Exceptions for "Animals" folder in "Animals" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = CE2BA6F92E8EA6FA00690ECD /* Animals */;
 		};
@@ -29,7 +29,7 @@
 		CE2BA6FC2E8EA6FA00690ECD /* Animals */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				CE0641D32E9275B000812FE0 /* Exceptions for "Animals" folder in "Animals" target */,
+				CE0642D12E93AADE00812FE0 /* Exceptions for "Animals" folder in "Animals" target */,
 			);
 			path = Animals;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Animals/Info.plist;
+				INFOPLIST_FILE = Animals/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,7 +312,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Animals/Info.plist;
+				INFOPLIST_FILE = Animals/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
