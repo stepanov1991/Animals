@@ -52,6 +52,15 @@ struct FactTabView: View {
                 }
                 
                 Spacer()
+                if let factUrl = content.image?.toURL {
+                    ShareLink(item: factUrl, preview: SharePreview(content.fact)) {
+                        Image(systemName: "square.and.arrow.up")
+                            .renderingMode(.template)
+                            .colorMultiply(.black)
+                    }
+                }
+           
+                Spacer()
                 
                 Button {
                     nextAction()
