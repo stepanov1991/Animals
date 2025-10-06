@@ -34,7 +34,6 @@ struct AnimalCell: View {
                 .frame(width: 121, height: 90)
                 .padding(.vertical, 5)
                 .padding(.leading, 5)
-             
                 
                 VStack(alignment: .leading, spacing: 0) {
                     VStack(alignment: .leading, spacing: 0) {
@@ -48,7 +47,6 @@ struct AnimalCell: View {
                             .foregroundStyle(theme.subtitleText)
                     }
                     .padding(.leading, 5)
-                    
                     
                     Spacer()
                     if animalCategory.status == .paid {
@@ -86,7 +84,6 @@ struct AnimalCell: View {
         }
     }
 }
-
 
 private extension View {
     @ViewBuilder

@@ -13,6 +13,7 @@ import ComposableArchitecture
 struct AnimalsApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     static var animalListStore = Store(initialState: AnimalListFeature.State()) {
         AnimalListFeature()
     }

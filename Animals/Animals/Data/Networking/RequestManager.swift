@@ -22,7 +22,6 @@ class RequestManager {
                 guard let httpResponse = response as? HTTPURLResponse else {
                     throw AppError.somethingWentWrong
                 }
-                
                 guard (200...299).contains(httpResponse.statusCode) else {
                     logger.error("Server returned status code: \(httpResponse.statusCode)")
                     throw AppError.somethingWentWrong
@@ -33,7 +32,6 @@ class RequestManager {
                     throw AppError.emptyData
                 }
                 return try JSONDecoder.default.decode(type, from: data)
-                
             } catch let error as DecodingError {
                 logger.error("Parsing error: \(error.localizedDescription)")
                 throw AppError.parsingError(error)
